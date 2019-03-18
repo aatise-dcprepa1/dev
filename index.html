@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,23 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/vendors/normalize.css">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendors/slick/slick.css"/>
 
 </head>
+
 <body>
 
   <header>
 
-    <div class="logo"><h1>Aatise</h1></div>
+    <div class="logo">
+      <h1>Aatise</h1>
+    </div>
 
     <nav id="navigation" role="navigation">
+      <ul class="user-controls">
+        <li class="menu"><a href="#"><img src="assets/img/menu.png" alt="Menu de navigation"></a></li>
+        <li class="cart"><a href="#"><img src="assets/img/cart.png" alt="Voir mon panier"></a></li>
+      </ul>
       <ul class="main-nav">
         <li><a href="#">Accueil</a></li>
         <li><a href="#">Femme</a></li>
@@ -26,18 +35,34 @@
         <li><a href="#">Blog</a></li>
         <li><a href="#">Connexion</a></li>
         <li><a href="#">S'inscrire</a></li>
-      </ul>
-      <ul class="user-controls">
-        <li class="lang"><a href="#">FR</a></li>
-        <li class="lang"><a href="#">ENG</a></li>
-        <li class="cart"><a href="#">Cart icon</a></li>
+        <li class="money-select">
+          <a href="#">Monnaie : EUR</a>
+          <ul>
+            <li><a href="#">CHF - Franc suisse</a></li>
+            <li><a href="#">EUR - Euro</a></li>
+            <li><a href="#">GBP - Livre Sterling</a></li>
+            <li><a href="#">USD - Dollar Américain</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
 
-    <h2>Des vêtements pour Elle, et pour Lui</h2>
-    <a href="#" class="bouton">Accéder à la boutique</a>
+<div class="header-slider">
+  <div class="slider" style="background: url(assets/img/header-desktop.png) no-repeat top center;">
+    <span class="header-slider-content">
+      <p>Des vêtements pour Elle, et pour Lui</p>
+      <a href="#" class="bouton">Accéder à la boutique</a>
+      </span>
+    </div>
 
-    <div class="slider-controls"></div>
+    <div class="slider" style="background: url(assets/img/header-img-slider-1.png) no-repeat top center;">
+      <span class="header-slider-content">
+        <p>Ceci est un test</p>
+        <a href="#" class="bouton">Accéder à la boutique</a>
+        </span>
+      </div>
+  </div>
+
 
 
 
@@ -47,9 +72,9 @@
 
   <section class="Concept/Questionnaire">
     <h2>Concept</h2>
-      <p> Ne fabriquer que ce qui est nécessaire, dans le respect de ceux qui font la mode : c'est ça notre style!</p>
+    <p> Ne fabriquer que ce qui est nécessaire, dans le respect de ceux qui font la mode : c'est ça notre style!</p>
     <h2>Questionnaire</h2>
-      <p> Vous répondrez à un questionnaire afin d'imaginer le produit de vos rêves</p>
+    <p> Vous répondrez à un questionnaire afin d'imaginer le produit de vos rêves</p>
     <div class="slider-controls"></div>
     <a href="#" class="bouton">En savoir plus</a>
   </section> <!-- Angelina -->
@@ -58,45 +83,47 @@
   <section class="marque">
     <h2>La marque</h2>
     <div class="wrapper">
-    <div class="logo"></div>
-    <h3>Nos valeurs</h3>
-    <ol>
-      <li>Privilégier l'utilisation de matières naturelles renouvelables</li>
-      <li>Réduire l'impact sur l'environnement</li>
-      <li>Allonger le cycle de vie du produit et anticiper les déchets textiles</li>
-    </ol>
+      <div class="logo"></div>
+      <h3>Nos valeurs</h3>
+      <ol>
+        <li>Privilégier l'utilisation de matières naturelles renouvelables</li>
+        <li>Réduire l'impact sur l'environnement</li>
+        <li>Allonger le cycle de vie du produit et anticiper les déchets textiles</li>
+      </ol>
 
-    <div class="slider-controls"></div>
+      <div class="slider-controls"></div>
     </div>
     <a href="#" class="bouton">En savoir plus</a>
 
   </section> <!-- Alexandre -->
 
 
-   <section class="boutique">
-       <h2>Boutique</h2>
-       <div class="boutique-cadre">
-         <h3>Boutique Femme</h3>
-           <a href="#" class="bouton"></a>
-         <img class="boutique-img"></img>
-       </div>
-      <div class="boutique-cadre">
-        <h3>Boutique Homme</h3>
-          <a href="#" class="bouton"></a>
-        <img class="boutique-img"></img>
-      </div>
+  <section class="boutique">
+    <h2>Boutique</h2>
+    <div class="boutique-cadre">
+      <h3>Boutique Femme</h3>
+      <a href="#" class="bouton"></a>
+      <img class="boutique-img"></img>
+    </div>
+    <div class="boutique-cadre">
+      <h3>Boutique Homme</h3>
+      <a href="#" class="bouton"></a>
+      <img class="boutique-img"></img>
+    </div>
   </section>
 
 
 
 
-   <!-- Viktor -->
-  <section class="newsletter">
+  <!-- Viktor -->
+
+  <form class="newsletter" action="#" method="post">
     <h2>Newsletter</h2>
-      <p>Abonnez-vous, vous ne le regretterez pas</p>
-        <input type="email"name="email" placeholder="votre@email.com">
-          <a href="#" class="bouton">Et hop !</a>
-  </section>
+    <p>Abonnez-vous, vous ne le regretterez pas</p>
+    <input type="email" name="email" placeholder="votre@email.com">
+    <button class="bouton">Et hop !</button>
+  </form>
+
   <section class="réassurance">
     <div class="retours"><img src="assets/img/iconfinder_CreditCard_Payment_4075918.png">
       <p>Paiement sécurisé</p>
@@ -111,5 +138,42 @@
   </section><!-- Angelina -->
 
 
+  <footer>
+    <div class="logo"></div>
+    <ul class="social">
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Pinterest</a></li>
+      <li><a href="#">Twitter</a></li>
+    </ul>
+    <ul class="links">
+      <li><a href="#">Plan du site</a></li>
+      <li><a href="#">Guide d'achat</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </footer>
+
+
+
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/vendors/slick/slick.min.js"></script>
+
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.header-slider').slick({
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 10000,
+        arrows: false,
+      });
+    });
+  </script>
+
 </body>
+
 </html>
