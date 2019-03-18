@@ -1,4 +1,5 @@
 body{
+<<<<<<< HEAD
 
   font-family: "Josefin Sans";
 }
@@ -135,4 +136,23 @@ list-style: none;
     color: black;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+=======
+  max-width: 375px;
+}
+
+.concept h2{
+  font-size: 20px;
+  text-align: center;
+}
+.white {
+  color: grey;
+}
+.concept p{
+  font-size: 15px;
+  text-align: center;
+  margin-left: 35px;
+}
+.PantalonMain{
+
+>>>>>>> 8aa200df4f8c3c9c360816754e363c759becde66
 }
