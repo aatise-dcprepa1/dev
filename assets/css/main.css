@@ -1,7 +1,8 @@
 body{
-
   font-family: "Josefin Sans";
 }
+
+/* HEADER */
 
 header{
   height: 667px;
@@ -136,6 +137,43 @@ list-style: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+
+
+/* LA MARQUE */
+
+
+
+.marque{
+  text-align: center;
+}
+
+.marque .wrapper{
+  background: black;
+  color: white;
+}
+
+.marque ol{
+  list-style: none;
+  counter-reset: li;
+  display: flex;
+  flex-direction: column;
+}
+
+.marque ol li::before{
+  content: counter(li); color: red;
+  display: inline-block; width: 1em;
+  margin-left: 0;
+}
+
+.marque li {counter-increment: li;}
+
+
+.marque ol li{
+  width: 33%;
+}
+
+
 
 .concept h2{
   font-size: 20px;
